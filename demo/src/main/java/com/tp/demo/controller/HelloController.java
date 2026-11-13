@@ -1,3 +1,4 @@
+
 package com.tp.demo.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
@@ -9,5 +10,10 @@ public class HelloController {
     @GetMapping("/hello")
     public String hello() {
         return "Bonjour DevOps !";
+    }
+
+    @GetMapping("/version")
+    public String version() {
+        return "1.0.0";
     }
 }
